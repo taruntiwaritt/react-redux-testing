@@ -15,11 +15,11 @@ afterEach(() => {
   wrapped.unmount();
 });
 
-it("has a text area and button", () => {
+it("has a text area and 2 buttons", () => {
   //using fullDOM (mount) instead of shallow just as learning practice
   //necessary to unmount in fullDOM Enzyme as it interacts with
   expect(wrapped.find("textarea").length).toEqual(1);
-  expect(wrapped.find("button").length).toEqual(1);
+  expect(wrapped.find("button").length).toEqual(2);
 });
 
 describe("the text area", () => {

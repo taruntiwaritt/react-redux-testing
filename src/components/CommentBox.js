@@ -27,6 +27,9 @@ class CommentBox extends React.Component {
             <button>Submit</button>
           </div>
         </form>
+        <button className="fetch-comments" onClick={this.props.fetchComment}>
+          Fetch comments
+        </button>
       </div>
     );
   }
